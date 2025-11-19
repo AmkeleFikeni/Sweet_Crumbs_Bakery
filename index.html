@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sweet Crumbs Bakery — freshly baked cakes, cupcakes and pastries. Handcrafted daily using quality ingredients.">
+  <meta name="author" content="ST10399140">
+  <title>Sweet Crumbs Bakery — Home</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <img src="images/logo.png" alt="Sweet Crumbs Bakery logo" class="logo">
+      <div>
+        <h1>Sweet Crumbs Bakery</h1>
+        <p class="slogan">Freshly baked happiness, every day.</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <h2 id="hero-heading">Handmade treats — baked with care</h2>
+    
+      <img class="hero-img" src="images/sweet3%20-%20Copy.jpg" alt="Sweet Crumbs display of assorted pastries">
+      <p class="lead">We make cakes, cupcakes and pastries for every celebration. Order online or visit our shop.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="products.html">View Products</a>
+        <a class="btn" id="orderNowBtn" href="orders.html">Place Order</a>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-heading">
+      <h3 id="features-heading">Why Sweet Crumbs?</h3>
+      <ul>
+        <li>Small-batch, handcrafted baking</li>
+        <li>Quality ingredients — no unnecessary additives</li>
+        <li>Custom cakes, wedding orders and daily pastries</li>
+      </ul>
+    </section>
+
+    <section class="home-bottom">
+      <img src="images/destop.png" alt="Sweet Crumbs bakery interior / display" class="bottom-img">
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Sweet Crumbs Bakery — Student Project </p>
+  </footer>
+</body>
+</html>

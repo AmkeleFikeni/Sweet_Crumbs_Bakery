@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Place an order with Sweet Crumbs Bakery. Custom cakes and baked goods.">
+  <meta name="author" content="ST10399140">
+  <title>Sweet Crumbs Bakery — Orders</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Sweet Crumbs Bakery logo" class="logo">
+      <div><h1>Sweet Crumbs Bakery</h1></div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html" class="active">Orders</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
+
+  <main>
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm" novalidate>
+      <label for="cust-name">Full name</label>
+      <input id="cust-name" name="name" type="text" required>
+
+      <label for="cust-email">Email</label>
+      <input id="cust-email" name="email" type="email" required>
+
+      <label for="product">Product</label>
+      <select id="product" name="product" required>
+        <option value="">-- Choose product --</option>
+        <option value="Signature Cake">Signature Cake</option>
+        <option value="Iced Cupcake">Iced Cupcake</option>
+        <option value="Rustic Pastry">Rustic Pastry</option>
+      </select>
+
+      <label for="qty">Quantity</label>
+      <input id="qty" name="qty" type="number" min="1" value="1" required>
+
+      <label for="date">Pickup Date</label>
+      <input id="date" name="date" type="date">
+
+      <label for="notes">Special notes</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+      <button type="submit" class="btn primary">Submit Order</button>
+    </form>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Sweet Crumbs Bakery</p>
+  </footer>
+</body>
+</html>

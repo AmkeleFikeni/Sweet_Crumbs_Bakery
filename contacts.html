@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact Sweet Crumbs Bakery — Find our locations, watch our bakery, or send a message.">
+  <meta name="author" content="ST10399140">
+  <title>Sweet Crumbs Bakery — Contact</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Sweet Crumbs Bakery logo" class="logo">
+      <div><h1>Sweet Crumbs Bakery</h1></div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contacts.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
+
+  <main>
+    <h2>Contact & Locations</h2>
+    <p>Find both our store locations below or send us a message.</p>
+
+    <div class="map-grid">
+    
+      <iframe title="Johannesburg location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.030600315191!2d28.047305!3d-26.204103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c6d3f33bbfd%3A0xdeb3d7e5b45b3f2f!2sJohannesburg!5e0!3m2!1sen!2sza!4v1700000000000" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      
+      <iframe title="Cape Town location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.722999999999!2d18.4241!3d-33.9249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676e8e8748f9%3A0xdeb3d7e5b45b3f2f!2sCape%20Town!5e0!3m2!1sen!2sza!4v1700000000001" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <h3>Watch our bakery</h3>
+    <div class="video-wrap">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Bakery video" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h3>Send us a message</h3>
+    <form id="contactForm" novalidate>
+      <label for="cname">Name</label>
+      <input id="cname" name="name" type="text" required>
+
+      <label for="cemail">Email</label>
+      <input id="cemail" name="email" type="email" required>
+
+      <label for="cmsg">Message</label>
+      <textarea id="cmsg" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Sweet Crumbs Bakery </p>
+  </footer>
+</body>
+</html>

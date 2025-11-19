@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Products from Sweet Crumbs — cakes, cupcakes and pastries.">
+  <meta name="author" content="ST10399140">
+  <title>Sweet Crumbs Bakery — Products</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Sweet Crumbs Bakery logo" class="logo">
+      <div>
+        <h1>Sweet Crumbs Bakery</h1>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
+
+  <main>
+    <h2>Our Products</h2>
+    <p>All items are baked fresh daily. Click an item to order.</p>
+
+    <div class="product-grid" aria-live="polite">
+      <article class="product-card">
+        <img src="images/ice.jfif" alt="Ice cream cupcake" class="product-img">
+        <h3>Ice cupcake</h3>
+        <p>R20</p>
+      </article>
+
+      <article class="product-card">
+        <img src="images/rustic.jfif" alt="Rustic loaf / pastry" class="product-img">
+        <h3>Rustic Pastry</h3>
+        <p>R45</p>
+      </article>
+
+      <article class="product-card">
+        <img src="images/sweet3%20-%20Copy.jpg" alt="Sweet Crumbs signature cake" class="product-img">
+        <h3>Signature Cake</h3>
+        <p>R350</p>
+      </article>
+
+      <article class="product-card">
+        <img src="images/vegan.jfif" alt="Vegan pastry option" class="product-img">
+        <h3>Vegan Tart</h3>
+        <p>R60</p>
+      </article>
+
+      <article class="product-card">
+        <img src="images/withice.jfif" alt="Iced cupcake" class="product-img">
+        <h3>Iced Cupcake</h3>
+        <p>R25</p>
+      </article>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Sweet Crumbs Bakery</p>
+  </footer>
+</body>
+</html>
